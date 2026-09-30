@@ -1,0 +1,12 @@
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/CMakeFiles/appmodules.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/rnasyncstorage_autolinked_build/CMakeFiles/edit_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/rnasyncstorage_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/rnscreens_autolinked_build/CMakeFiles/edit_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/RelWithDebInfo/1y13k2c3/arm64-v8a/rnscreens_autolinked_build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+D:/antigravity/Yolda/mobile/android/app/.cxx/Debug/2z1x571s/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/Debug/2z1x571s/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/Debug/2z1x571s/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+D:/antigravity/Yolda/mobile/android/app/.cxx/Debug/2z1x571s/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

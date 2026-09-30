@@ -1,0 +1,6 @@
+D:\antigravity\Yolda\mobile\android\app\.cxx\Debug\2z1x571s\x86\rnasyncstorage_autolinked_build\CMakeFiles\react_codegen_rnasyncstorage.dir\react\renderer\components\rnasyncstorage\ComponentDescriptors.cpp.o
+D:\antigravity\Yolda\mobile\android\app\.cxx\Debug\2z1x571s\x86\rnasyncstorage_autolinked_build\CMakeFiles\react_codegen_rnasyncstorage.dir\react\renderer\components\rnasyncstorage\EventEmitters.cpp.o
+D:\antigravity\Yolda\mobile\android\app\.cxx\Debug\2z1x571s\x86\rnasyncstorage_autolinked_build\CMakeFiles\react_codegen_rnasyncstorage.dir\react\renderer\components\rnasyncstorage\Props.cpp.o
+D:\antigravity\Yolda\mobile\android\app\.cxx\Debug\2z1x571s\x86\rnasyncstorage_autolinked_build\CMakeFiles\react_codegen_rnasyncstorage.dir\react\renderer\components\rnasyncstorage\ShadowNodes.cpp.o
+D:\antigravity\Yolda\mobile\android\app\.cxx\Debug\2z1x571s\x86\rnasyncstorage_autolinked_build\CMakeFiles\react_codegen_rnasyncstorage.dir\react\renderer\components\rnasyncstorage\States.cpp.o
+D:\antigravity\Yolda\mobile\android\app\.cxx\Debug\2z1x571s\x86\rnasyncstorage_autolinked_build\CMakeFiles\react_codegen_rnasyncstorage.dir\rnasyncstorage-generated.cpp.o
