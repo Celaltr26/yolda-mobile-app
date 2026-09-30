@@ -38,4 +38,11 @@ yarn-error.*
 
 # generated native folders
 /ios
-/android
+# /android (GitHub'a eklenmesi için yorum satırı yapıldı)
+
+# Android build and cache ignores
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/local.properties
