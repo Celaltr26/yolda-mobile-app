@@ -17,7 +17,7 @@ Kullanıcıların anlık yolculuk talebi oluşturabildiği, sürücülerin bekle
 ## 🌐 Canlı Servis Bağlantıları & Test APK
 
 - **Canlı Backend API:** `https://yolda-mobile-app.onrender.com/api`
-- **Mobil Test APK:** [app-release.apk İndir](https://github.com/Celaltr26/yolda-mobile-app/releases/download/v1.0.0/app-release.apk)
+- **Mobil Test APK:** [app-release.apk İndir](https://github.com/Celaltr26/yolda-mobile-app/releases/download/v1.0.1/app-release.apk)
 - **API Değiştirici:** Uygulama içindeki üst başlıkta (Header) bulunan `⚙️ API` butonu ile canlı sunucu veya yerel IP adresi anlık olarak değiştirilebilir.
 
 ---
