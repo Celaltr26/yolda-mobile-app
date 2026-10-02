@@ -32,6 +32,12 @@ export const CreateRideScreen: React.FC<CreateRideScreenProps> = ({ navigation }
     'Zorlu Center',
   ];
 
+  const handleSwapAddresses = () => {
+    setOriginAddress(destinationAddress);
+    setDestinationAddress(originAddress);
+    if (error) clearError();
+  };
+
   const handleSubmit = async () => {
     if (!originAddress.trim() || !destinationAddress.trim()) {
       Alert.alert('Eksik Bilgi', 'Lütfen alış ve varış adreslerini giriniz.');
@@ -87,7 +93,18 @@ export const CreateRideScreen: React.FC<CreateRideScreenProps> = ({ navigation }
 
         {/* Talep Oluşturma Kartı */}
         <View style={styles.card}>
-          <Text style={styles.cardHeader}>Nereye Gitmek İstiyorsunuz?</Text>
+          <View style={styles.cardHeaderRow}>
+            <Text style={styles.cardHeader}>Nereye Gitmek İstiyorsunuz?</Text>
+            {(originAddress.length > 0 || destinationAddress.length > 0) && (
+              <TouchableOpacity
+                style={styles.swapBtn}
+                onPress={handleSwapAddresses}
+                activeOpacity={0.7}
+              >
+                <Text style={styles.swapBtnText}>⇅ Değiştir</Text>
+              </TouchableOpacity>
+            )}
+          </View>
 
           {error && (
             <View style={styles.errorBox}>
@@ -106,7 +123,14 @@ export const CreateRideScreen: React.FC<CreateRideScreenProps> = ({ navigation }
             <View style={styles.inputsWrapper}>
               {/* Alış Noktası */}
               <View style={styles.inputContainer}>
-                <Text style={styles.inputMiniLabel}>NEREDEN ALINSIN?</Text>
+                <View style={styles.inputHeaderRow}>
+                  <Text style={styles.inputMiniLabel}>NEREDEN ALINSIN?</Text>
+                  {originAddress.length > 0 && (
+                    <TouchableOpacity onPress={() => setOriginAddress('')}>
+                      <Text style={styles.clearInputText}>Temizle</Text>
+                    </TouchableOpacity>
+                  )}
+                </View>
                 <TextInput
                   style={styles.input}
                   placeholder="Başlangıç adresi (örn: Kadıköy Rıhtım)"
@@ -121,7 +145,14 @@ export const CreateRideScreen: React.FC<CreateRideScreenProps> = ({ navigation }
 
               {/* Varış Noktası */}
               <View style={styles.inputContainer}>
-                <Text style={styles.inputMiniLabel}>NEREYE GİDİLECEK?</Text>
+                <View style={styles.inputHeaderRow}>
+                  <Text style={styles.inputMiniLabel}>NEREYE GİDİLECEK?</Text>
+                  {destinationAddress.length > 0 && (
+                    <TouchableOpacity onPress={() => setDestinationAddress('')}>
+                      <Text style={styles.clearInputText}>Temizle</Text>
+                    </TouchableOpacity>
+                  )}
+                </View>
                 <TextInput
                   style={styles.input}
                   placeholder="Hedef adresi (örn: Beşiktaş Meydan)"
@@ -135,6 +166,19 @@ export const CreateRideScreen: React.FC<CreateRideScreenProps> = ({ navigation }
               </View>
             </View>
           </View>
+
+          {/* Yolculuk Önizleme Bilgisi */}
+          {originAddress.trim().length > 0 && destinationAddress.trim().length > 0 && (
+            <View style={styles.estimateBanner}>
+              <Text style={styles.estimateIcon}>⚡</Text>
+              <View style={styles.estimateContent}>
+                <Text style={styles.estimateTitle}>Yolda TAG Standart</Text>
+                <Text style={styles.estimateSubtitle}>
+                  En yakın sürücü aranacak • Ödeme doğrudan sürücüye
+                </Text>
+              </View>
+            </View>
+          )}
 
           {/* Hızlı Öneriler */}
           <View style={styles.quickSection}>
@@ -253,11 +297,67 @@ const styles = StyleSheet.create({
     elevation: 3,
     marginBottom: 16,
   },
+  cardHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
   cardHeader: {
     fontSize: 18,
     fontWeight: '800',
     color: Colors.textPrimary,
-    marginBottom: 16,
+  },
+  swapBtn: {
+    backgroundColor: Colors.surfaceSubtle,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: Colors.border,
+  },
+  swapBtnText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: Colors.textPrimary,
+  },
+  inputHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 2,
+  },
+  clearInputText: {
+    fontSize: 10,
+    fontWeight: '700',
+    color: Colors.textMuted,
+  },
+  estimateBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#EFF6FF',
+    borderWidth: 1,
+    borderColor: '#BFDBFE',
+    borderRadius: 12,
+    padding: 12,
+    marginBottom: 14,
+  },
+  estimateIcon: {
+    fontSize: 20,
+    marginRight: 10,
+  },
+  estimateContent: {
+    flex: 1,
+  },
+  estimateTitle: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: '#1E40AF',
+  },
+  estimateSubtitle: {
+    fontSize: 11,
+    color: '#1E3A8A',
+    marginTop: 1,
   },
   errorBox: {
     backgroundColor: Colors.dangerBg,

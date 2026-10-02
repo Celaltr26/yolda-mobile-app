@@ -44,7 +44,12 @@ export const RideCard: React.FC<RideCardProps> = ({
     <View style={styles.card}>
       {/* Kart Başlığı: Durum ve Tarih */}
       <View style={styles.headerRow}>
-        <StatusBadge status={ride.status} size="small" />
+        <View style={styles.headerLeft}>
+          <StatusBadge status={ride.status} size="small" />
+          <View style={styles.rideTypeBadge}>
+            <Text style={styles.rideTypeBadgeText}>TAG</Text>
+          </View>
+        </View>
         <Text style={styles.dateText}>{formatDate(ride.createdAt)}</Text>
       </View>
 
@@ -167,6 +172,25 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 12,
+  },
+  headerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  rideTypeBadge: {
+    backgroundColor: '#FEF08A',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: '#FDE047',
+  },
+  rideTypeBadgeText: {
+    fontSize: 9,
+    fontWeight: '800',
+    color: '#854D0E',
+    letterSpacing: 0.5,
   },
   dateText: {
     fontSize: 12,
